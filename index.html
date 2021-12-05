@@ -4,10 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/style.css">
+    <title>HR</title>
 </head>
 <body>
-        initial
+    <div class="wrapper">
+        <header class="header">
+            <button type="button">
+                <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H21M1 6.73913H13.8205M1 13H6.64103" stroke="#1D3F4E" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <button type="button">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="9.8995" r="6" transform="rotate(45 10 9.8995)" stroke="#1D3F4E" stroke-width="2"/>
+                    <path d="M14.2426 14.8492L21.3137 21.9203" stroke="#1D3F4E" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </header>
+        <section class="intro">
+            <h1 class="intro__title">Вакансии разработчика</h1>
+            <div class="cats">
+                <button class="cats__item">
+                    разработчик
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 9M9 1L1 8.55556" stroke="#2B5E74" stroke-linecap="round"/>
+                    </svg>                        
+                </button>
+                <button class="cats__item">
+                    Москва
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 9M9 1L1 8.55556" stroke="#2B5E74" stroke-linecap="round"/>
+                    </svg>                        
+                </button>
+                <button class="cats__item">
+                    неполная занятость
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 9M9 1L1 8.55556" stroke="#2B5E74" stroke-linecap="round"/>
+                    </svg>                        
+                </button>
+                <button class="cats__item">
+                    $20/ч
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 9M9 1L1 8.55556" stroke="#2B5E74" stroke-linecap="round"/>
+                    </svg>                        
+                </button>
+            </div>
+            <img src="images/intro.png" alt="" class="intro__img">
+        </section>
+        <section class="popular">
+            <h2 class="title">Популярные</h2>
+            <div class="popular__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide popular__item">
+                        <div class="popular__item-header">
+                            <div class="popular__item-img">
+                                <img src="images/nike.png" alt="">
+                            </div>
+                            <div class="popular__item-cats">
+                                <div class="popular__item-cat">полная занятость</div>
+                                <div class="popular__item-cat">без опыта</div>
+                            </div>
+                        </div>
+                        <div class="popular__item-content">
+                            <h4 class="popular__item-title">Flutter Developer</h4>
+                            <p class="popular__item-price">$10/ч</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide popular__item">
+                        <div class="popular__item-header">
+                            <div class="popular__item-img">
+                                <img src="images/google.png" alt="">
+                            </div>
+                            <div class="popular__item-cats">
+                                <div class="popular__item-cat">частичная занятость</div>
+                                <div class="popular__item-cat">без опыта</div>
+                            </div>
+                        </div>
+                        <div class="popular__item-content">
+                            <h4 class="popular__item-title">Product Designer</h4>
+                            <p class="popular__item-price">$60/ч</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new">
+            <h2 class="title">Новые</h2>
+            <div class="new__list">
+                <div class="new__item">
+                    <img src="images/uber.png" alt="">
+                    <div class="new__item-mid">
+                        <p class="new__item-title">Flutter Middle</p>
+                        <p class="new__item-desc">Uber Technologies Inc.</p>
+                    </div>
+                    <div class="new__item-req">
+                        <p class="new__item-price">$45/ч</p>
+                        <p class="new__item-p">без опыта</p>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <img src="images/apple.png" alt="">
+                    <div class="new__item-mid">
+                        <p class="new__item-title">Lead UX/UI Designer</p>
+                        <p class="new__item-desc">Apple Inc.</p>
+                    </div>
+                    <div class="new__item-req">
+                        <p class="new__item-price">$80/ч</p>
+                        <p class="new__item-p">без опыта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
